@@ -1,18 +1,38 @@
-﻿using System.Text;
+﻿using FirstBisProject;
+using System.Text;
 
-string title = "a sam journey";
-var subTitle = "A orsys game";
+//string title = "a sam journey";
+//var subTitle = "A orsys game";
 
-char oneChar = 'A';
-var oneChar2 = "A";
+//char oneChar = 'A';
+//var oneChar2 = "A";
 
-// Console.WriteLine(title.ToUpper().ToLower());
-Console.WriteLine(title.Substring(0, 1).ToUpper() + title.Substring(1));
-Console.WriteLine(subTitle[0]);
+//// Console.WriteLine(title.ToUpper().ToLower());
+//Console.WriteLine(title.Substring(0, 1).ToUpper() + title.Substring(1));
+//Console.WriteLine(subTitle[0]);
 
-DisplayMenu();
+//DisplayMenu();
 
 #region Learnings
+TypeAnimal typeAnimal = TypeAnimal.Horse;
+int valueOfHorse = (int)typeAnimal;
+
+string displayType = typeAnimal.ToString();
+Console.WriteLine(displayType);
+
+typeAnimal = (TypeAnimal)Enum.Parse(typeof(TypeAnimal), displayType);
+typeAnimal = Enum.Parse<TypeAnimal>(displayType);
+
+foreach (var item in Enum.GetNames<TypeAnimal>())
+{
+    Console.WriteLine("{0}", item.ToUpper());
+}
+
+foreach (var item in Enum.GetValues<TypeAnimal>())
+{
+    Console.WriteLine("{0}", (int)item);
+}
+
 void ConcatListOfStrings()
 {
     string content = string.Empty;
@@ -72,3 +92,5 @@ int GetLastIndex()
     return 3;
 }
 #endregion
+
+Console.ReadLine();

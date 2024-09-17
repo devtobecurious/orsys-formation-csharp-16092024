@@ -10,6 +10,27 @@ ExecuteActionByChoice(choice);
 
 
 #region Code interne
+DateTime GetBirthDayFromUser()
+{
+    DateTime date = DateTime.MinValue;
+
+    Console.WriteLine("Ta date de naissance ?");
+    var saisie = Console.ReadLine();
+
+    if (DateTime.TryParse(saisie, out date))
+    {
+        TimeSpan diff = DateTime.Now - date;
+        int nbYears = diff.Days / 365;
+
+        if (nbYears < 13)
+        {
+            Environment.Exit(-1);
+        }
+    }
+
+    return date;
+}
+
 int GetChoiceFromUser()
 {
     Console.WriteLine("Saisis ton choix");
