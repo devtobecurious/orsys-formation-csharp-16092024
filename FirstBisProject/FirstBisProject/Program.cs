@@ -14,6 +14,45 @@ using System.Text;
 //DisplayMenu();
 
 #region Learnings
+#region POO
+
+Animal cheval = new Animal("");
+var chevalBis = new Animal(100);
+Animal chevalTres = new("");
+
+Animal jolly = cheval;
+
+{
+    var test = 1;
+}
+// Console.WriteLine(test);
+
+void UseHorse(Animal animal) // ici c'est bien une variable nouvelle ! mais on a copié la référence passée
+{
+
+    // animal.Surname = "Hello 1";
+    // animal = new Animal();
+    animal.Eat("herbe");
+}
+UseHorse(cheval);
+UseHorse(jolly);
+#endregion
+
+#region Out ref
+bool Compute(int a, int b, out int resultA)
+{
+    resultA = a + b;
+
+    return true;
+}
+
+int result = 0;
+var success = Compute(1, 2, out result);
+
+
+#endregion
+
+#region Enums
 TypeAnimal typeAnimal = TypeAnimal.Horse;
 int valueOfHorse = (int)typeAnimal;
 
@@ -32,6 +71,7 @@ foreach (var item in Enum.GetValues<TypeAnimal>())
 {
     Console.WriteLine("{0}", (int)item);
 }
+#endregion
 
 void ConcatListOfStrings()
 {
