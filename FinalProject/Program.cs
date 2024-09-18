@@ -1,4 +1,6 @@
-﻿System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
+﻿using SdA.Models;
+
+System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
 
 Console.WriteLine("A Sam journey");
 
@@ -6,6 +8,47 @@ Console.WriteLine("A Sam journey");
 DisplayMenu();
 int choice = GetChoiceFromUser();
 ExecuteActionByChoice(choice);
+
+
+#region POC
+Weapon weapon = new("Epée", 100);
+Character character = new("", 0)
+{
+    Surname = ""
+};
+
+//Vector2D vector = new()
+//{
+//    X = 10,
+//    Y = 20,
+//};
+
+//Vector2D vector2 = new()
+//{
+//    X = 10,
+//    Y = 20,
+//};
+Vector2D vector = new(10, 20);
+Vector2D vector2 = new(10, 20);
+
+bool isEqual = vector == vector2;
+
+if (character.Weapon != null && !string.IsNullOrEmpty(character.Weapon.Label))
+{
+    string upper = character.Weapon.Label.ToUpper();
+}
+
+string? upper2 = character.Weapon?.Label?.ToUpper();
+upper2?.ToArray();
+
+//if(character.Strength.HasValue)
+//{
+//    character.Strength.Value.
+//}
+
+
+#endregion
+
 #endregion
 
 

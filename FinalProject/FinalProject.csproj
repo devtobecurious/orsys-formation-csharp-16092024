@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SdA.Models\SdA.Models.csproj" />
+    <ProjectReference Include="..\SdA.Repositories\SdA.Repositories.csproj" />
   </ItemGroup>
 
   <ItemGroup>
