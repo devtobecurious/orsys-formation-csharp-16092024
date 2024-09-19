@@ -12,5 +12,18 @@
             base.Sleep(duration);
             Console.WriteLine("Je dors dans un terrier");
         }
+
+        private int ears;
+        public int Ears
+        {
+            get
+            {
+                return this.ears;
+            }
+            set
+            {
+                this.ears = value;
+            }
+        }
     }
 }

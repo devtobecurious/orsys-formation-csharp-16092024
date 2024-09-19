@@ -1,16 +1,32 @@
-﻿namespace SdA.Models;
+﻿using SdA.Models.Exceptions;
 
-public class Character
+namespace SdA.Models;
+
+public abstract class Character
 {
     #region Constructors
     public Character(string surname, int strength)
     {
         // this.Surname = surname;
-        // this.Strength = strength;
+        this.Strength = strength;
     }
     #endregion
 
     #region Public methods
+    public virtual void Attack(Character character)
+    {
+        if (character == null)
+        {
+            throw new ArgumentNullException(nameof(character));
+        }
+
+        if (character == this || character.Surname == this.Surname)
+        {
+            throw new DifferentCharacterRequiredException(character);
+        }
+
+    }
+
     public void Move(Vector2D vector)
     {
         this.CurrentPosition = new Vector2D(vector.X + this.CurrentPosition.X, vector.Y + this.CurrentPosition.Y);
