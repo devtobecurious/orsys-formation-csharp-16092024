@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SdA.Repositories", "..\SdA.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaViePro", "..\LaViePro\LaViePro.csproj", "{1920DB2C-4104-415F-A1A4-57A264915268}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaVieDesComptables", "LaVieDesComptables\LaVieDesComptables.csproj", "{C6B46B30-5CEB-4054-96FD-78AFF5214405}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{1920DB2C-4104-415F-A1A4-57A264915268}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1920DB2C-4104-415F-A1A4-57A264915268}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1920DB2C-4104-415F-A1A4-57A264915268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6B46B30-5CEB-4054-96FD-78AFF5214405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6B46B30-5CEB-4054-96FD-78AFF5214405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6B46B30-5CEB-4054-96FD-78AFF5214405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6B46B30-5CEB-4054-96FD-78AFF5214405}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{E301E673-BC6D-4484-9763-8BF8C3D4F970} = {E06AC415-EC30-4FB3-A8A4-9846F19D80DF}
 		{C167EB38-CCD5-4DEB-8CB6-F2CB3D8E4683} = {E06AC415-EC30-4FB3-A8A4-9846F19D80DF}
 		{1920DB2C-4104-415F-A1A4-57A264915268} = {624348D7-AB00-43B8-9BDB-16AE2905C66F}
+		{C6B46B30-5CEB-4054-96FD-78AFF5214405} = {624348D7-AB00-43B8-9BDB-16AE2905C66F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CCE2B89D-66A5-43F4-B4B7-A36DC70B0128}
