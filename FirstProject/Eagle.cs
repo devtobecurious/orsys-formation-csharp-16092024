@@ -1,6 +1,6 @@
 ﻿namespace FirstProject
 {
-    internal class Eagle : Animal
+    internal class Eagle : FlyingBird
     {
         public override void Sleep(int duration)
         {

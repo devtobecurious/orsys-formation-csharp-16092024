@@ -25,7 +25,10 @@ public abstract class Character
             throw new DifferentCharacterRequiredException(character);
         }
 
+        this.DoAttack(character);
     }
+
+    protected abstract void DoAttack(Character character);
 
     public void Move(Vector2D vector)
     {

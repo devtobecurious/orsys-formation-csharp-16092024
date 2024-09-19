@@ -41,3 +41,39 @@ void BigUpToEagles(IEnumerable<Eagle> eagles)
 
 
 // eagle.TypeAnimal = TypeAnimal.Rabbit;
+
+IAbilityToFly batman = new Bat();
+
+List<IAbilityToFly> list = new List<IAbilityToFly>()
+{
+    new Eagle(),
+    new Leia(),
+    //new Bat()
+};
+List<IAbilityToFly> list2 =
+[
+    new Eagle(),
+    new Leia(),
+    new Bat()
+];
+
+//Dictionary<int, string> dico = new Dictionary<int, string>()
+//{
+//    { 1, "coucou" },
+//    { 1, "coucou" }
+//};
+Dictionary<int, IAbilityToFly> dico = new Dictionary<int, IAbilityToFly>()
+{
+    { 1, new Eagle() },
+    { 2, new Leia() }
+};
+
+GoToFlyMyFriends(list);
+
+void GoToFlyMyFriends(IEnumerable<IAbilityToFly> flyers)
+{
+    foreach (var flyer in flyers)
+    {
+        flyer.Fly();
+    }
+}

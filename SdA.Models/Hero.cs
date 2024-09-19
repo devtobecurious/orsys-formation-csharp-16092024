@@ -9,5 +9,15 @@
         public Hero() : this("Unknown")
         {
         }
+
+        public override void Attack(Character character)
+        {
+            base.Attack(character);
+        }
+
+        protected override void DoAttack(Character character)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
