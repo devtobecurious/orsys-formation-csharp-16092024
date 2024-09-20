@@ -31,4 +31,8 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Using Include="SdA.Models" />
+  </ItemGroup>
+
 </Project>
