@@ -2,7 +2,7 @@
 {
     internal delegate void CreerCode(Developer dev, Code code);
 
-    internal class Developer
+    internal class Developer : ICeluiQuiCode
     {
         public event CreerCode CodeFini;
 

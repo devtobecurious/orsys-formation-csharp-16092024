@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaVieDesComptables", "LaVie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeMondedesDevs", "LeMondedesDevs\LeMondedesDevs.csproj", "{78D34D3A-D5D1-4451-8F05-51A689EC33D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecouverteLinq", "DecouverteLinq\DecouverteLinq.csproj", "{5553524E-AF43-466B-9C02-940C349EF9BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{78D34D3A-D5D1-4451-8F05-51A689EC33D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78D34D3A-D5D1-4451-8F05-51A689EC33D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78D34D3A-D5D1-4451-8F05-51A689EC33D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5553524E-AF43-466B-9C02-940C349EF9BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5553524E-AF43-466B-9C02-940C349EF9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5553524E-AF43-466B-9C02-940C349EF9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5553524E-AF43-466B-9C02-940C349EF9BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{1920DB2C-4104-415F-A1A4-57A264915268} = {624348D7-AB00-43B8-9BDB-16AE2905C66F}
 		{C6B46B30-5CEB-4054-96FD-78AFF5214405} = {624348D7-AB00-43B8-9BDB-16AE2905C66F}
 		{78D34D3A-D5D1-4451-8F05-51A689EC33D4} = {624348D7-AB00-43B8-9BDB-16AE2905C66F}
+		{5553524E-AF43-466B-9C02-940C349EF9BD} = {624348D7-AB00-43B8-9BDB-16AE2905C66F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CCE2B89D-66A5-43F4-B4B7-A36DC70B0128}

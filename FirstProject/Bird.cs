@@ -14,6 +14,8 @@ namespace FirstProject
 
     internal class FlyingBird : Bird, IAbilityToFly
     {
+        public int NbWings { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         public void Fly()
         {
             Console.WriteLine("I'm flying !");
